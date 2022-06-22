@@ -1,0 +1,359 @@
+body{
+    background-color: #FCFCFC;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Side Left Menu */
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+}
+
+.left{
+    background-color: #9CC0E7;
+    width: 23%;
+    height: 100%;
+    margin: 0px;
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+}
+
+.left #photo img{
+    width: 73%;
+    border-radius: 100%;
+}
+
+.left #photo{
+    padding: 10px;
+}
+
+.left .textleft{
+    text-align: center;
+    font-family: 'Popins', sans-serif;
+}
+
+.socialmedia {
+    padding: 0;
+}
+
+.socialmedia img{
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.socialmedia a:hover{
+    opacity: 50%;
+}
+
+
+.left h3{
+    text-align: center;
+    font-family: 'Popins', sans-serif;
+    color: #000742;
+    font-weight: 600;
+}
+
+.left .menu{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.left .menu ul{
+    list-style: none;
+    text-align: center;
+    display: block;
+    padding: 0;
+}
+
+.left .menu li{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.left .menu li:hover{
+    background-color: #b0cceb;
+}
+
+.left .menu li a{
+    color: #000742;
+    text-align: center;
+    text-decoration: none;
+}
+
+.left .menu li a:hover{
+    color: #EEEEEE;
+    opacity: 65%;
+}
+
+/* Right Side for Object */
+#wrap{
+    float: right;
+    width: 77%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+    z-index: 3;
+    overflow: clip;
+    font-family: 'Popins', sans-serif;
+}
+
+/* Subtitle */
+#wrap h3{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Popins', sans-serif;
+    color: #000742;
+    padding: 70px 0 20px 0;
+}
+
+#wrap h3:before, h3:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid;
+    margin: auto;
+}
+
+#wrap h3:before {
+    margin-right: 10px;
+    color: #EEEEEE;
+}
+
+#wrap h3:after {
+    margin-left: 10px;
+    color: #EEEEEE;
+}
+
+/* paragraph in ea subtitle */
+#wrap p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 0 70px;
+}
+
+/* RIWAYAT PENDIDIKAN */
+#wrap #RiwayatPendidikan ul{
+    padding: 0 70px;
+    list-style-image: url(pendidikan.svg);
+}
+/* list */
+#wrap #RiwayatPendidikan ul li{
+    padding: 0 15px 0 0;
+}
+/* paragraph in list */
+#wrap #RiwayatPendidikan ul p{
+    padding: 0 15px 15px 0;
+}
+/* paragraph in each list */
+#wrap #RiwayatPendidikan ul li p{
+    padding: 0;
+    opacity: 70%;
+}
+
+/* RIWAYAT ORGANISASI */
+#wrap #RiwayatOrganisasi ul{
+    padding: 0 70px;
+    list-style-image: url(organisasi.svg);
+}
+/* list */
+#wrap #RiwayatOrganisasi ul li{
+    padding: 20px 15px 0 0;
+}
+/* paragraph in each list */
+#wrap #RiwayatOrganisasi ul li p{
+    padding: 0;
+    opacity: 70%;
+}
+/* paragraph in list */
+#wrap #RiwayatOrganisasi ul p{
+    padding: 0 15px 10px 0;
+}
+/* list under list */
+/* padding list */
+#wrap #RiwayatOrganisasi ul ul{
+    padding: 0 0 0 18px;
+}
+/* padding each list */
+#wrap #RiwayatOrganisasi ul ul li{
+    list-style-image: url(circle.svg);
+    padding: 0 15px 10px 0;
+}
+
+/* Skill */
+#wrap #Skill img{
+    width: 320px;
+    height: 180px;
+}
+
+#wrap #Skill td{
+    padding: 0 70px;
+}
+
+#wrap #Skill table{
+    align-items: center;
+    padding: 0 70px;
+}
+
+/* Galeri */
+#wrap #Galeri p{
+    padding: 0 70px 10px 70px;
+}
+
+#wrap #Galeri p img{
+    width: 200px;
+    height: auto;
+    justify-content: center;
+}
+
+/* for mobile */
+@media(max-width:900px){
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.left{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    background-color: #9CC0E7;
+    height: 100%;
+    margin: 0px;
+    z-index: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Right Side for Object */
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: fixed;
+    cursor: pointer;
+    color: #EEEEEE;
+    border-radius: 5px;
+    margin: 15px;
+    font-size: 28px;
+    background: #9CC0E7;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .left{
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: all .5s ease;
+  }
+
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+#wrap{
+    width: 100%;
+}
+
+#wrap h3{
+    padding: 70px 0 20px 0;
+}
+
+/* Skill */
+#wrap #Skill img{
+    width: 160px;
+    height: 90px;
+}
+
+#wrap #Skill table{
+    align-items: center;
+    padding: 0 50px;
+}
+
+#wrap #Skill td{
+    padding: 0;
+}
+
+/* Tablet */
+@media(max-width:768px){
+#wrap #Skill img{
+    width: 320px;
+    height: 180px;
+}
+    
+#wrap #Skill table{
+    align-items: center;
+    padding: 0 60px;
+}
+
+/* Galeri */
+#wrap #Galeri p{
+    padding: 0 80px;
+}
+
+#wrap #Galeri p img{
+    width: 150px;
+    height: auto;
+}
+
+}
+
+/* Another mobile */
+@media(max-width:425px){
+#wrap #Skill img{
+    width: 160px;
+    height: 90px;
+}
+        
+#wrap #Skill table{
+    align-items: center;
+    padding: 0 40px;
+}
+}
+
+@media(max-width:375px){
+.left{
+    width: 200px;
+    left: -200px;
+}
+}
+
+}
